@@ -240,7 +240,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: C:/Users/faruk/Documents/Projects/RollOverKeystore/user.keystore
-  AndroidKeyaliasName: 
+  AndroidKeyaliasName: virtualcaptain
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
