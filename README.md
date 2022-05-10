@@ -8,4 +8,4 @@ RollOver (Version 0.1) is still under development. Requires an Android 4.4 'KitK
 ## Test and Download Link
 [Android Application Package](https://github.com/FarukKayaduman/RollOver/raw/main/Android%20Application%20Package%20(APK)/RollOverTest.apk)
 ## Information on development
-* Development environment: [Unity Engine](https://unity.com/), [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+* Development environment: [Unity Engine](https://unity.com/), [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/)
