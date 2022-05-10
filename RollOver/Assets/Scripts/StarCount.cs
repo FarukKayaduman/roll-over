@@ -10,6 +10,5 @@ public class StarCount : MonoBehaviour
     void Update()
     {
         starCountText.text = gameObject.GetComponent<PlayerCollision>().numberOfStarTriggered.ToString("0");
-        Debug.Log(gameObject.GetComponent<PlayerCollision>().numberOfStarTriggered);
     }
 }
