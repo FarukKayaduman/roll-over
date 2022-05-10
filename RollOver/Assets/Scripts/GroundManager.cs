@@ -20,17 +20,13 @@ public class GroundManager : MonoBehaviour
 
     void Start()
     {
-
-        SpawnPiece(0);
-        SpawnPiece(0);
-
         for (int i = 0; i < numberOfPieces; i++)
         {
             if (i == 0)
             {
                 // Spawn the piece at index 0, there is only the ground without other objects
-                // SpawnPiece(0);
-                // SpawnPiece(0);
+                SpawnPiece(0);
+                SpawnPiece(0);
             }
             else
             {

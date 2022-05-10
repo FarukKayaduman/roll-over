@@ -9,7 +9,9 @@ public class PlayerMovement : MonoBehaviour
 
     public GameManager gameManager;
 
-    public float forwardForce = 2000f;
+    public float limitX = 7.25f;
+
+    public float forwardForce = 27f;
 
     public float sidewaysMove = 0.01f;
 
@@ -25,13 +27,18 @@ public class PlayerMovement : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 transform.position = new Vector3(
-                    transform.position.x + touch.deltaPosition.x * sidewaysMove,
+                    Mathf.Clamp(transform.position.x + touch.deltaPosition.x * sidewaysMove, -limitX, limitX),
                     transform.position.y, 
                     transform.position.z);
             }
         }
 
-        if(rb.position.y < -1f)
+        transform.position = new Vector3(
+                    Mathf.Clamp(transform.position.x + Input.GetAxis("Horizontal") * sidewaysMove * 13.5f, -limitX, limitX),
+                    transform.position.y,
+                    transform.position.z);
+
+        if (rb.position.y < -1f)
         {
             gameManager.TryAgain();
         }
